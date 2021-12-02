@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose');
+.header{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    border: 1px solid #D8D8D8;
+box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+}
+
+.header-title{
+    font-family: "Red Rose", cursive !important;
+    position: absolute;
+    width: 199px;
+    height: 35px;
+    margin-left: 63px;
+    font-size: 28px;
+}
+
+.header-search{
+    font-family: "Red Rose", cursive !important;
+    position: sticky;
+    width: 578px;
+    height: 55px;
+    left: 382px;
+    top: 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 2em;
+    padding-left: 1em;
+}
+
+
+a{
+    font-family: "Red Rose", cursive;
+    font-size: 18px;
+    color: #00000073;
+}
+
+
+.spacer {
+    flex: 1 1 auto;
+  }

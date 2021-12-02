@@ -1,0 +1,89 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="card-presentation">
+    <div class="card-image"></div>
+    <div class="akira">
+       <div class="gilson">
+        <div class="card-title">
+            <span> Skins Revoada o melhor site para comprar suas skins e NFTs com suas criptomoeadas.</span>
+         </div>
+         <div class="card-subtitle">
+             <span>Fácil, rápido, diverso e seguro esse é o melhor site para você gamer.</span>
+         </div>
+       </div>
+       <div class="kat">
+        <mat-card class="example-card">
+            <img mat-card-image src="../../../assets/background" alt="Photo of a Shiba Inu">
+            <div class="card-field">
+                <div class="card-avt">
+                    <div class="bolota"></div>
+                </div>
+                <div class="card-text">
+                    <p class="card-text1">Dota vs Cs Go</p>
+                    <p class="card-text2">Eazzy</p>
+                </div>
+            </div>
+        </mat-card>
+       </div>
+    </div>
+</div>
+
+<div class="titulo-vendas">
+    <span class="titulo">Vamos as compras</span>
+</div>
+
+<div class="cards">
+    <div class="body-cards" *ngFor="let data of data">
+        <div class="card-test">
+            <br>
+            <div class="skin-img">
+                <img class="skin-data" src="{{data.img}}" alt="">
+            </div>
+            <div class="skin-info">
+                <div class="info-name">
+                    <span class="name-skin">{{data.name}}</span>
+                    <span class="info-price">
+                        <span> <i class="fab fa-ethereum icon"></i></span>
+                        <span>{{data.price | number}}</span>
+                    </span>
+                </div>
+                <div class="info-skin">
+                    <small>{{data.name_vendor}}</small>
+                </div>
+            </div>
+            <div class="skin-shop">
+                <button class="btn-shop" mat-raised-button [disabled]="isBuy(data.id)" (click)="buy(data.id, data.price)">{{isBuy(data.id) ? "Comprado" : "Comprar"}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal-lg">
+        <div class="modal-header">
+          <span class="modal-title" id="exampleModalLongTitle">Minha Carteira</span>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="body-wt">
+            <span>A loja tem {{EthCoin}} ETH na conta.</span>
+            <br>
+            <button mat-raised-button (click)="withdraw()"
+             style="width: 50%;
+                  background-color: #537bb7;
+                  color: #ffffff;">Retirar Dinheiro</button>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>

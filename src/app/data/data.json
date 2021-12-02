@@ -1,0 +1,26 @@
+[
+    {
+        "name": "AK-47 Discruptor Fantasma",
+        "name_vendor": "Gilson Bezerra",
+        "price": 100,
+        "img": "../../assets/img/AK-47-Disruptor-Fantasma.jpg"
+    },
+    {
+        "name": "AK-47 Neon Rider",
+        "name_vendor": "Gabriel Teixeira",
+        "price": 100,
+        "img": "../../assets/img/AK-47_Neon_Rider.jpg"
+    },
+    {
+        "name": "AK-47 The Empress",
+        "name_vendor": "João Vitor",
+        "price": 100,
+        "img": "../../assets/img/AK-47_The_Empress.jpg"
+    },
+    {
+        "name": "AWP Dragon Lore",
+        "name_vendor": "Gilson Bezerra",
+        "price": 100,
+        "img": "../../assets/img/awp"
+    }
+]
